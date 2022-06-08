@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="options.js"></script>
+</head>
+<body>
+    <form action="/update" id="form" method="post">
+        <p><label for="domains">Target Domains (One on each newline):</label></p>
+        <textarea id="domains" name="domains" rows="4" cols="60">
+        </textarea>
+
+        <p><label for="platform">Intended Platform:</label></p>
+        <select name="platform" id="platform">
+			<option value="MacIntel">MacIntel</option>
+			<option value="MacPPC">MacPPC</option>
+			<option value="Mac68K">Mac68K</option>
+			<option value="Win32">Win32</option>
+			<option value="Win16">Win16</option>
+			<option value="SunOS">SunOS</option>
+			<option value="HP-UX">HP-UX</option>
+			<option value="Linux i686">Linux i686</option>
+            <option value="WinCE">WinCE</option>
+			<option value="iPhone">iPhone</option>
+			<option value="iPod">iPod</option>
+			<option value="iPad">iPad</option>
+			<option value="Android">Android</option>
+			<option value="BlackBerry">BlackBerry</option>
+			<option value="Opera">Opera</option>
+        </select>
+        <br>
+        <br>
+        <button type="button" id="update">Update</button>
+    </form>
+</body>
+</html>
