@@ -16,13 +16,9 @@
     }],
     "permissions": [
         "scripting",
-<<<<<<< HEAD
-        "storage"
-=======
         "tabs",
         "storage",
         "webNavigation"
->>>>>>> 7b5ce07411b1c493b91cad8d17442012103effc7
     ],
     "options_ui": {
         "page": "options.html",
