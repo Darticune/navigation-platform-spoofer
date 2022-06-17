@@ -7,11 +7,10 @@ const readLocalStorage = async (key) => {
     return new Promise((resolve, reject) => {
         chrome.storage.local.get([key], function (result) {
             if (result[key] === undefined) {
-                resolve("");
+                reject("Local Storage Read Error");
             } else {
                 resolve(result[key]);
             }
-            
         });
     });
 };

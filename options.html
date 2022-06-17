@@ -3,14 +3,15 @@
 
 <head>
 	<script src="options.js"></script>
+	<link rel="stylesheet" href="options.css">
 </head>
 <body>
     <form action="/update" id="form" method="post">
-        <p><label for="domains">Target Domains (One on each newline):</label></p>
-        <textarea id="domains" name="domains" rows="4" cols="60">
+        <h3><label for="domains">Target Domains (One on each newline):</label></h3>
+        <textarea id="domains" name="domains" rows="15" cols="180">
         </textarea>
 
-        <p><label for="platform">Intended Platform:</label></p>
+        <h3><label for="platform">Intended Platform:</label></h3>
         <select name="platform" id="platform">
 			<option value="MacIntel">MacIntel</option>
 			<option value="MacPPC">MacPPC</option>
@@ -31,6 +32,8 @@
         <br>
         <br>
         <button type="button" id="update">Update</button>
+		<input type="checkbox" id="openTabs" name="openTabs">
+		<label for="openTabs"> Open these Links upon Update </label><br>
     </form>
 </body>
 </html>
